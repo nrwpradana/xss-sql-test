@@ -62,5 +62,8 @@ Alat ini ditujukan untuk tujuan pendidikan dan kesadaran saja. Gunakan dengan ta
 UNION SELECT username, password FROM users; --
 ```
 
+## Dokumentasi
+Dokumentasi dari proyek ini dapat diakses melalui [link](https://docs.google.com/document/d/15YoVvp_s4fLi0pI1LEZsXiUVXWPZ_PEm4PFKBFXOo9Y/edit?usp=sharing) ini.
+
 ## Lisensi
 Proyek ini dilisensikan di bawah Lisensi [MIT](https://choosealicense.com/licenses/mit/).
